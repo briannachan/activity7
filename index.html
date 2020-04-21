@@ -46,11 +46,11 @@
 
         L.geoJSON(unchorton).addTo(map)
 
-        var daPhoto = L.tileLayer('./data/{z}/{x}/{y}.png', {
+        var daPhoto = L.tileLayer('./tiles/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
-        attribution: 'USGS'
+        attribution: 'USGS Brianna C'
       }).addTo(map);
 
         var uncIcon = L.icon({ // notice the L.icon which is a Leaflet object with properties
