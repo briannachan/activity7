@@ -17,6 +17,8 @@
 
    <script src = "./data/old_well_4326.geojson"></script>
 
+   <script src = "./firstleaflet/daphoto9.html"></script>
+
    
 
 </head>
@@ -44,7 +46,7 @@
 
         L.geoJSON(unchorton).addTo(map)
 
-        var daPhoto = L.tileLayer('file:////Users/briannachan/Documents/GEOG%20370/photo_webmap/{z}/{x}/{y}.png', {
+        var daPhoto = L.tileLayer('./firstleaflet/{z}/{x}/{y}.png', {
         minZoom: 12,
         maxZoom: 16,
         tms: false,
